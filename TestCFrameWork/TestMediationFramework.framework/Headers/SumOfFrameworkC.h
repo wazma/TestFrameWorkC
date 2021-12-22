@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SumOfFrameworkC : NSObject
 
 @property (nonatomic,assign) NSNumber *summ;
+
 -(NSNumber *)sumCreturn;
+
 @end
 
 NS_ASSUME_NONNULL_END

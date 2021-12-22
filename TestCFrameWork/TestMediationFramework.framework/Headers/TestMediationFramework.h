@@ -1,5 +1,5 @@
 //
-//  TestFrameWorkC.h
+//  TestMediationFramework.h
 //  TestFrameWorkC
 //
 //  Created by wazma on 21/12/2021.
@@ -14,6 +14,8 @@ FOUNDATION_EXPORT double TestFrameWorkCVersionNumber;
 FOUNDATION_EXPORT const unsigned char TestFrameWorkCVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TestFrameWorkC/PublicHeader.h>
-#import <TestFrameWorkC/SumOfFrameworkC.h>
+#import <TestMediationFramework/SumOfFrameworkC.h>
+#import <TestMediationFramework/MyBaseClass.h>
+
 
 

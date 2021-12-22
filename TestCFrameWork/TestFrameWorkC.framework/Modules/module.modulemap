@@ -1,6 +1,0 @@
-framework module TestFrameWorkC {
-  umbrella header "TestFrameWorkC.h"
-
-  export *
-  module * { export * }
-}

@@ -28,8 +28,8 @@
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		B829C0F678A61A86D0BF3D610B724F89 /* Pods-TestCFrameWork_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 555ACDA686C6BEF1F366CC5C8DDAE138 /* Pods-TestCFrameWork_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B900AF2F2EB7AF1A91539A295A2BA119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		BA783C502773588400C76DEA /* TestMediationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA783C4F2773588400C76DEA /* TestMediationFramework.framework */; platformFilter = ios; };
 		BACAFB5383AFBEE02B5042C31575D157 /* Pods-TestCFrameWork_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8569F4B4F4AB672714E5873005B949 /* Pods-TestCFrameWork_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAE352132772FBF1005EDDBD /* TestFrameWorkC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE352122772FBF1005EDDBD /* TestFrameWorkC.framework */; platformFilter = ios; };
 		C171C65D1E5071B1AEF79AD80B30501F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
@@ -113,7 +113,7 @@
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B468D01D0DA43D17629E49041C2BB568 /* TestCFrameWork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TestCFrameWork-prefix.pch"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		BAE352122772FBF1005EDDBD /* TestFrameWorkC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestFrameWorkC.framework; path = TestCFrameWork/TestFrameWorkC.framework; sourceTree = "<group>"; };
+		BA783C4F2773588400C76DEA /* TestMediationFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestMediationFramework.framework; path = TestCFrameWork/TestMediationFramework.framework; sourceTree = "<group>"; };
 		C109B00DF965D9F86864C9B4E3C9536A /* TestCFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestCFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24DA077F833D425483523B30D9AABD7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA783C502773588400C76DEA /* TestMediationFramework.framework in Frameworks */,
 				ED3304ECACD89A49EABC5D92AC04B3E1 /* Foundation.framework in Frameworks */,
-				BAE352132772FBF1005EDDBD /* TestFrameWorkC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +259,7 @@
 		A1A5CCA4E70FAFBC2E6F4F563089CFBF /* TestCFrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				BAE352122772FBF1005EDDBD /* TestFrameWorkC.framework */,
+				BA783C4F2773588400C76DEA /* TestMediationFramework.framework */,
 				90E3CB0F7760A8B87A8113B382480AFD /* ReplaceMe.m */,
 				DE4A62925789507C4BD2A39B67C0904A /* Pod */,
 				72DDCCC9F13CD6FC801F85F76F586B22 /* Support Files */,

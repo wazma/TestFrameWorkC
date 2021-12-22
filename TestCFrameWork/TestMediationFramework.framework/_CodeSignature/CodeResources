@@ -4,56 +4,71 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/MyBaseClass.h</key>
+		<data>
+		eg8XycWcstafXDBte75OPAlIDRs=
+		</data>
 		<key>Headers/SumOfFrameworkC.h</key>
 		<data>
-		qREiGYJGQnwlGvx0/vQSizX6fo4=
+		Mln16e5pzDFGRW5qfZXSbsUY2bc=
 		</data>
-		<key>Headers/TestFrameWorkC.h</key>
+		<key>Headers/TestMediationFramework.h</key>
 		<data>
-		FR1xfgXn+tYTM7KEM9TPjQ8sqVQ=
+		r8ysF+21ld82kr7p3XgkYoDhkWg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9zxBXHOMAlOKLMncGp5myBjAT90=
+		u/XrK+YSELR+XOggmHbzSduKfjQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		vEwYEgqD4mDwhGUxUxNk1GzGdno=
+		rXSHleexWTFTLdeLQMNqMwQkiJo=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/MyBaseClass.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eg8XycWcstafXDBte75OPAlIDRs=
+			</data>
+			<key>hash2</key>
+			<data>
+			XEzxNtwqkPtEeeSPGLSqgKkg9SmoI6w2w+fGt+2+cds=
+			</data>
+		</dict>
 		<key>Headers/SumOfFrameworkC.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qREiGYJGQnwlGvx0/vQSizX6fo4=
+			Mln16e5pzDFGRW5qfZXSbsUY2bc=
 			</data>
 			<key>hash2</key>
 			<data>
-			6bIAygri5FjzwLMYN1bvJEBkLufvaYIKEnAEzMA7xcc=
+			a1U5rCNtbCZJAfTLmmTGOEYOK/+kMnoMNf/BhJqdlNQ=
 			</data>
 		</dict>
-		<key>Headers/TestFrameWorkC.h</key>
+		<key>Headers/TestMediationFramework.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FR1xfgXn+tYTM7KEM9TPjQ8sqVQ=
+			r8ysF+21ld82kr7p3XgkYoDhkWg=
 			</data>
 			<key>hash2</key>
 			<data>
-			psZsVb5M/1uMU29m9A6PniA24RTGxuQj+cUA7uKAVdQ=
+			0sARFIaB3jao9CsVQpPztRpv/MjNgpjRQF/4kDGKbpM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vEwYEgqD4mDwhGUxUxNk1GzGdno=
+			rXSHleexWTFTLdeLQMNqMwQkiJo=
 			</data>
 			<key>hash2</key>
 			<data>
-			xc3Pm/VpR+C4PyL6Gbjg1oNfN+lxSpcJO3MEPJoGPJ4=
+			YiIvAlYH24y/tPixUXLHCzaVw/7Ah1YAYUpEV9xuilw=
 			</data>
 		</dict>
 	</dict>

@@ -1,0 +1,6 @@
+framework module TestMediationFramework {
+  umbrella header "TestMediationFramework.h"
+
+  export *
+  module * { export * }
+}

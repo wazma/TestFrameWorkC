@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.source_files = 'TestCFrameWork/Classes/**/*'
 
- s.vendored_frameworks = 'TestCFrameWork/TestFrameWorkC.framework'
+ s.vendored_frameworks = 'TestCFrameWork/TestMediationFramework.framework'
  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # s.resource_bundles = {
