@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - TestCFrameWork (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - TestCFrameWork (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  TestCFrameWork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  TestCFrameWork: d47f1a26d3d26cd975ab8b283d2835e3da1e57d8
+
+PODFILE CHECKSUM: 6b3a038cc9a911051b4eba91a787cc0c69e9bcc8
+
+COCOAPODS: 1.11.2

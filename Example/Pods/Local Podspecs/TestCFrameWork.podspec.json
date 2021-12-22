@@ -1,0 +1,22 @@
+{
+  "name": "TestCFrameWork",
+  "version": "0.1.0",
+  "summary": "A short description of TestCFrameWork.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Wazma Ali/TestCFrameWork",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Wazma Ali": "wazma.ali@consoliads.com"
+  },
+  "source": {
+    "git": "https://github.com/Wazma Ali/TestCFrameWork.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TestCFrameWork/Classes/**/*"
+}
