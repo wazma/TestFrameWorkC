@@ -12,7 +12,7 @@
 #import <UIKit/UIKit.h>
 #import "CAMediatedBannerView.h"
 #import "ConsoliAdsMediationIconAdDelegate.h"
-#import "CAIconAdView.h"
+//#import "CAIconAdView.h"
 #import "CAMediationConstants.h"
 
 @interface ConsoliAdsMediation : NSObject
@@ -51,9 +51,9 @@
 
 - (void)showBanner:(CAMediatedBannerView*_Nonnull)bannerView viewController:(UIViewController*_Nullable)viewController;
 
-- (void)showIconAd:(PlaceholderName)placeholderName iconAdView:(CAIconAdView*_Nonnull)iconAdView delegate:(id<ConsoliAdsMediationIconAdDelegate>_Nonnull)delegate;
+- (void)showIconAd:(PlaceholderName)placeholderName iconAdView:(UIView*_Nonnull)iconAdView delegate:(id<ConsoliAdsMediationIconAdDelegate>_Nonnull)delegate;
 
-- (void)showIconAd:(CAIconAdView*_Nonnull)iconAdView delegate:(id<ConsoliAdsMediationIconAdDelegate>_Nonnull)delegate;
+- (void)showIconAd:(UIView*_Nonnull)iconAdView delegate:(id<ConsoliAdsMediationIconAdDelegate>_Nonnull)delegate;
 
 - (void)setInAppAdDelegate:(id<ConsoliAdsMediationInAppDelegate>_Nonnull)delegate;
 

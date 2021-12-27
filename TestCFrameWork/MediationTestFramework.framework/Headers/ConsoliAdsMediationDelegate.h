@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "CAMediationConstants.h"
-#import "CAInAppDetails.h"
-#import "CAInAppError.h"
+//#import "CAInAppDetails.h"
+//#import "CAInAppError.h"
 
 @protocol ConsoliAdsMediationDelegate <NSObject>
 
@@ -50,9 +50,9 @@
 
 @optional
 
-- (void)onInAppPurchaseFailed:(CAInAppError*)error;
-- (void)onInAppPurchaseSuccess:(CAInAppDetails*)product;
-- (void)onInAppPurchaseRestored:(CAInAppDetails*)product;
+//- (void)onInAppPurchaseFailed:(CAInAppError*)error;
+//- (void)onInAppPurchaseSuccess:(CAInAppDetails*)product;
+//- (void)onInAppPurchaseRestored:(CAInAppDetails*)product;
 
 @end
 
