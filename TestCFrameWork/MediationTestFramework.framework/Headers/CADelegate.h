@@ -30,7 +30,7 @@
 
 //- (void)caOnAdClick:(AdNetworkName)adNetworkName format:(AdFormat)format;
 //
-//- (void)caOnRewardedVideoAdCompleted:(AdNetworkName)adNetworkName;
+- (void)caOnRewardedVideoAdCompleted:(int)adNetworkName;
 //
 //- (void)caOnAppOpenAdLoadFailed:(AdNetworkName)adNetworkName orientation:(UIInterfaceOrientation)orientation;
 //
