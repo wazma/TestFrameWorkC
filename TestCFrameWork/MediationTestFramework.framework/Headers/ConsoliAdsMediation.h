@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ConsoliAdsMediationDelegate.h"
-#import "CANativeAdRequestDelegate.h"
+//#import "CANativeAdRequestDelegate.h"
 #import <UIKit/UIKit.h>
 #import "CAMediatedBannerView.h"
 #import "ConsoliAdsMediationIconAdDelegate.h"
@@ -40,12 +40,12 @@
 - (void)setInterstitialAdDelegate:(id<ConsoliAdsMediationInterstitialAdDelegate>_Nonnull)delegate;
 - (void)setRewardedAdDelegate:(id<ConsoliAdsMediationRewardedAdDelegate>_Nonnull)delegate;
 - (void)addAdmobTestDevice:(NSString *_Nonnull)deviceId;
-- (void)loadNativeAdInViewController:(UIViewController *_Nonnull)viewController
-                         placeholder:(PlaceholderName)placeholderName
-                            delegate:(id<CANativeAdRequestDelegate>_Nonnull)delegate;
-
-- (void)loadNativeAdInViewController:(UIViewController *_Nonnull)viewController
-                            delegate:(id<CANativeAdRequestDelegate>_Nonnull)delegate;
+//- (void)loadNativeAdInViewController:(UIViewController *_Nonnull)viewController
+//                         placeholder:(PlaceholderName)placeholderName
+//                            delegate:(id<CANativeAdRequestDelegate>_Nonnull)delegate;
+//
+//- (void)loadNativeAdInViewController:(UIViewController *_Nonnull)viewController
+//                            delegate:(id<CANativeAdRequestDelegate>_Nonnull)delegate;
 
 - (void)showBanner:(PlaceholderName)placeholderName bannerView:(CAMediatedBannerView*_Nonnull)bannerView viewController:(UIViewController*_Nullable)viewController;
 

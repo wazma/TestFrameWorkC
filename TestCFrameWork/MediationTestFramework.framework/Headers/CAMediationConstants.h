@@ -55,4 +55,18 @@ typedef enum: NSInteger{
     FAILED = 2,
     SHOWN = 3
 } BannerState;
+
+typedef enum : NSInteger  {
+    AdNetworkState_None = 0,
+    AdNetworkState_Initializing = 1,
+    AdNetworkState_InitSucceeded = 2,
+    AdNetworkState_InitFailed = 3
+} AdNetworkState;
+
+typedef enum : NSInteger {
+    Idle = 1,
+    Requested = 2,
+    Completed = 3,
+    Failed = 4
+} RequestState;
 #endif /* CAMediationConstants_h */

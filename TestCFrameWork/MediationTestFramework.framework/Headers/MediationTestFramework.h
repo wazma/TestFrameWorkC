@@ -14,7 +14,16 @@ FOUNDATION_EXPORT double MediationTestFrameworkVersionNumber;
 //! Project version string for MediationTestFramework.
 FOUNDATION_EXPORT const unsigned char MediationTestFrameworkVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <MediationTestFramework/PublicHeader.h>
-
 #import <MediationTestFramework/ConsoliAdsMediation.h>
+#import <MediationTestFramework/AdNetworkManager.h>
+#import <MediationTestFramework/AdNetwork.h>
+#import <MediationTestFramework/CAMediatedBannerView.h>
+
+#import <MediationTestFramework/CAAdNetworkInitializeListener.h>
+#import <MediationTestFramework/CANativeAdRequestDelegate.h>
+#import <MediationTestFramework/CANativeAdRenderingDelegate.h>
+#import <MediationTestFramework/ConsoliAdsMediationDelegate.h>
+#import <MediationTestFramework/ConsoliAdsMediationIconAdDelegate.h>
+#import <MediationTestFramework/CADelegate.h>
+#import <MediationTestFramework/CAMediationConstants.h>
 
