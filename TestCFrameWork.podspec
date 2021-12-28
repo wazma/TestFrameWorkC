@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestCFrameWork'
-  s.version          = '0.10.0'
+  s.version          = '0.11.0'
   s.summary          = 'A short description of TestCFrameWork.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,8 @@ Pod::Spec.new do |s|
   s.source_files = 'TestCFrameWork/Classes/**/*'
 
  s.vendored_frameworks = 'TestCFrameWork/MediationTestFramework.framework'
- s.pod_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC']}
- s.libraries =  'z'
-
+ s.xcconfig = {"OTHER_LDFLAGS" => "-ObjC"}
+ 
  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # s.resource_bundles = {
