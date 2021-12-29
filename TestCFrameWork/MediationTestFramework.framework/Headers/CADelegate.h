@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-//#import "CAMediatedBannerView.h" #Will use in future when integrating banner
-//#import "CANativeAdRequestDelegate.h" #Will use in futere when integrating NativeAd
+#import "CAMediatedBannerView.h"
+#import "CANativeAdRequestDelegate.h"
 
 
 @class AdNetwork;
@@ -28,27 +28,27 @@
 
 - (void)caOnAdClosed:(int)adNetworkName format:(int)format;
 
-//- (void)caOnAdClick:(AdNetworkName)adNetworkName format:(AdFormat)format;
+- (void)caOnAdClick:(int)adNetworkName format:(int)format;
 //
 - (void)caOnRewardedVideoAdCompleted:(int)adNetworkName;
 //
-//- (void)caOnAppOpenAdLoadFailed:(AdNetworkName)adNetworkName orientation:(UIInterfaceOrientation)orientation;
+- (void)caOnAppOpenAdLoadFailed:(int)adNetworkName orientation:(UIInterfaceOrientation)orientation;
 //
-//- (void)caOnAppOpenAdLoadSuccess:(AdNetworkName)adNetworkName;
+- (void)caOnAppOpenAdLoadSuccess:(int)adNetworkName;
 //
-//- (void)caOnAppOpenAdShowSuccess:(AdNetworkName)adNetworkName;
+- (void)caOnAppOpenAdShowSuccess:(int)adNetworkName;
 //
-//- (void)caOnAppOpenAdClosed:(AdNetworkName)adNetworkName;
+- (void)caOnAppOpenAdClosed:(int)adNetworkName;
 //
-//- (void)caOnAppOpenAdShowFailed:(AdNetworkName)adNetworkName;
+- (void)caOnAppOpenAdShowFailed:(int)adNetworkName;
 //
-//- (void)caOnBannerAdLoadFailed:(AdNetworkName)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner viewController:(UIViewController*_Nonnull)viewController;
+- (void)caOnBannerAdLoadFailed:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner viewController:(UIViewController*_Nonnull)viewController;
 //
-//- (void)caOnBannerAdClose:(AdNetworkName)adNetworkName bannerView:(CAMediatedBannerView*_Nonnull)bannerView;
+- (void)caOnBannerAdClose:(int)adNetworkName bannerView:(CAMediatedBannerView*_Nonnull)bannerView;
 //
-//- (void)caOnBannerAdLoadSuccess:(AdNetworkName)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner refreshed:(BOOL)isRefresh;
+- (void)caOnBannerAdLoadSuccess:(int)adNetworkName mediatedAd:(CAMediatedBannerView*_Nonnull)mediatedBanner refreshed:(BOOL)isRefresh;
 //
-//- (void)caOnNativeLoadFailed:(AdNetworkName)adNetworkName viewController:(UIViewController*_Nonnull)viewController delegate:(nonnull id<CANativeAdRequestDelegate>)delegate;
+- (void)caOnNativeLoadFailed:(int)adNetworkName viewController:(UIViewController*_Nonnull)viewController delegate:(nonnull id<CANativeAdRequestDelegate>)delegate;
 
 @end
 

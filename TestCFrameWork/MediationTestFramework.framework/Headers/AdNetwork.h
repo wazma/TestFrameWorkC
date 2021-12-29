@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "CANativeAdRequestDelegate.h"
-#import "CANativeAdRenderingDelegate.h"
+//#import "CANativeAdRequestDelegate.h"
+//#import "CANativeAdRenderingDelegate.h"
 #import "ConsoliAdsMediationDelegate.h"
 #import "ConsoliAdsMediationIconAdDelegate.h"
 #import "CADelegate.h"

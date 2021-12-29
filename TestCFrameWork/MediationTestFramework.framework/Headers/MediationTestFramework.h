@@ -26,4 +26,5 @@ FOUNDATION_EXPORT const unsigned char MediationTestFrameworkVersionString[];
 #import <MediationTestFramework/ConsoliAdsMediationIconAdDelegate.h>
 #import <MediationTestFramework/CADelegate.h>
 #import <MediationTestFramework/CAMediationConstants.h>
-
+#import <MediationTestFramework/CAMediatedNativeAd.h>
+//#import <MediationTestFramework/MediationNativeAdView.h>
