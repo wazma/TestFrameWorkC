@@ -30,6 +30,8 @@
 		B900AF2F2EB7AF1A91539A295A2BA119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		BA2B2C2C2779C80800CAA2C4 /* MediationTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2B2C2B2779C80800CAA2C4 /* MediationTestFramework.framework */; platformFilter = ios; };
 		BACAFB5383AFBEE02B5042C31575D157 /* Pods-TestCFrameWork_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8569F4B4F4AB672714E5873005B949 /* Pods-TestCFrameWork_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAFA434C278707B100B3A7FB /* ConsoliAdsResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAFA434A278707B100B3A7FB /* ConsoliAdsResources.bundle */; };
+		BAFA434D278707B100B3A7FB /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BAFA434B278707B100B3A7FB /* .gitkeep */; };
 		C171C65D1E5071B1AEF79AD80B30501F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
@@ -114,6 +116,8 @@
 		B468D01D0DA43D17629E49041C2BB568 /* TestCFrameWork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TestCFrameWork-prefix.pch"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		BA2B2C2B2779C80800CAA2C4 /* MediationTestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediationTestFramework.framework; path = TestCFrameWork/MediationTestFramework.framework; sourceTree = "<group>"; };
+		BAFA434A278707B100B3A7FB /* ConsoliAdsResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ConsoliAdsResources.bundle; sourceTree = "<group>"; };
+		BAFA434B278707B100B3A7FB /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		C109B00DF965D9F86864C9B4E3C9536A /* TestCFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestCFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24DA077F833D425483523B30D9AABD7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 		A1A5CCA4E70FAFBC2E6F4F563089CFBF /* TestCFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				BAFA4349278707B100B3A7FB /* Assets */,
 				BA2B2C2B2779C80800CAA2C4 /* MediationTestFramework.framework */,
 				90E3CB0F7760A8B87A8113B382480AFD /* ReplaceMe.m */,
 				DE4A62925789507C4BD2A39B67C0904A /* Pod */,
@@ -289,6 +294,16 @@
 				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAFA4349278707B100B3A7FB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA434A278707B100B3A7FB /* ConsoliAdsResources.bundle */,
+				BAFA434B278707B100B3A7FB /* .gitkeep */,
+			);
+			name = Assets;
+			path = TestCFrameWork/Assets;
 			sourceTree = "<group>";
 		};
 		BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */ = {
@@ -530,6 +545,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFA434C278707B100B3A7FB /* ConsoliAdsResources.bundle in Resources */,
+				BAFA434D278707B100B3A7FB /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

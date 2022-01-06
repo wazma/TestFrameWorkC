@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestCFrameWork'
-  s.version          = '0.15.0'
+  s.version          = '0.16.0'
   s.summary          = 'A short description of TestCFrameWork.'
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,9 @@ Pod::Spec.new do |s|
  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
  s.static_framework = true
+ s.resource_bundles = {
+      'TestCFrameWork' => ['TestCFrameWork/Assets/ConsoliAdsResources.bundle']
+    }
 
 
   # s.resource_bundles = {
