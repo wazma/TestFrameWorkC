@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,7 +28,7 @@
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		B829C0F678A61A86D0BF3D610B724F89 /* Pods-TestCFrameWork_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 555ACDA686C6BEF1F366CC5C8DDAE138 /* Pods-TestCFrameWork_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B900AF2F2EB7AF1A91539A295A2BA119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		BA2B2C2C2779C80800CAA2C4 /* MediationTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2B2C2B2779C80800CAA2C4 /* MediationTestFramework.framework */; platformFilter = ios; };
+		BAB66BF22788313F00547EE1 /* ConsoliAdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB66BF12788313E00547EE1 /* ConsoliAdsSDK.framework */; };
 		BACAFB5383AFBEE02B5042C31575D157 /* Pods-TestCFrameWork_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8569F4B4F4AB672714E5873005B949 /* Pods-TestCFrameWork_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAFA434C278707B100B3A7FB /* ConsoliAdsResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAFA434A278707B100B3A7FB /* ConsoliAdsResources.bundle */; };
 		BAFA434D278707B100B3A7FB /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BAFA434B278707B100B3A7FB /* .gitkeep */; };
@@ -115,7 +115,7 @@
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B468D01D0DA43D17629E49041C2BB568 /* TestCFrameWork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TestCFrameWork-prefix.pch"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		BA2B2C2B2779C80800CAA2C4 /* MediationTestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediationTestFramework.framework; path = TestCFrameWork/MediationTestFramework.framework; sourceTree = "<group>"; };
+		BAB66BF12788313E00547EE1 /* ConsoliAdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConsoliAdsSDK.framework; path = TestCFrameWork/ConsoliAdsSDK.framework; sourceTree = "<group>"; };
 		BAFA434A278707B100B3A7FB /* ConsoliAdsResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ConsoliAdsResources.bundle; sourceTree = "<group>"; };
 		BAFA434B278707B100B3A7FB /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		C109B00DF965D9F86864C9B4E3C9536A /* TestCFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestCFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2B2C2C2779C80800CAA2C4 /* MediationTestFramework.framework in Frameworks */,
+				BAB66BF22788313F00547EE1 /* ConsoliAdsSDK.framework in Frameworks */,
 				ED3304ECACD89A49EABC5D92AC04B3E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +263,8 @@
 		A1A5CCA4E70FAFBC2E6F4F563089CFBF /* TestCFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				BAB66BF12788313E00547EE1 /* ConsoliAdsSDK.framework */,
 				BAFA4349278707B100B3A7FB /* Assets */,
-				BA2B2C2B2779C80800CAA2C4 /* MediationTestFramework.framework */,
 				90E3CB0F7760A8B87A8113B382480AFD /* ReplaceMe.m */,
 				DE4A62925789507C4BD2A39B67C0904A /* Pod */,
 				72DDCCC9F13CD6FC801F85F76F586B22 /* Support Files */,
@@ -641,11 +641,7 @@
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
 				PRODUCT_NAME = FBSnapshotTestCase;
@@ -677,11 +673,7 @@
 				INFOPLIST_FILE = "Target Support Files/TestCFrameWork/TestCFrameWork-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TestCFrameWork/TestCFrameWork.modulemap";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_MODULE_NAME = TestCFrameWork;
@@ -778,11 +770,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TestCFrameWork_Tests/Pods-TestCFrameWork_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TestCFrameWork_Tests/Pods-TestCFrameWork_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -814,11 +802,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TestCFrameWork_Tests/Pods-TestCFrameWork_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TestCFrameWork_Tests/Pods-TestCFrameWork_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -852,11 +836,7 @@
 				INFOPLIST_FILE = "Target Support Files/TestCFrameWork/TestCFrameWork-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TestCFrameWork/TestCFrameWork.modulemap";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -889,11 +869,7 @@
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
 				PRODUCT_NAME = FBSnapshotTestCase;
@@ -923,11 +899,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TestCFrameWork_Example/Pods-TestCFrameWork_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TestCFrameWork_Example/Pods-TestCFrameWork_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -998,8 +970,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1021,11 +992,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TestCFrameWork_Example/Pods-TestCFrameWork_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TestCFrameWork_Example/Pods-TestCFrameWork_Example.modulemap";
 				OTHER_LDFLAGS = "";

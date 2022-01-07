@@ -1,0 +1,6 @@
+framework module ConsoliAdsSDK {
+  umbrella header "ConsoliAdsSDK.h"
+
+  export *
+  module * { export * }
+}
