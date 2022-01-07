@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestCFrameWork'
-  s.version          = '0.17.0'
+  s.version          = '0.17.1'
   s.summary          = 'A short description of TestCFrameWork.'
 
 # This description is used to generate tags and improve search results.
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
 
 
    s.resource_bundles = {
-     'TestCFrameWork' => ['TestCFrameWork/Assets/ConsoliAdsResources.bundle']
+     'ConsoliAdsResources' => ['TestCFrameWork/Assets/ConsoliAdsResources.bundle']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
